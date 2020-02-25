@@ -1,3 +1,12 @@
 #preferRuby, #preferCsharp, #preferJavascript, #preferPython {
   display: none;
 }
+
+.dehighlight {
+  opacity: 15%;
+}
+
+.highlight {
+  border: solid black;
+  border-width: 5px;
+}
