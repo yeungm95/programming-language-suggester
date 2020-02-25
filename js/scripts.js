@@ -1,9 +1,3 @@
-// var pythonScore = 0
-// var rubyScore = 0
-// var javascriptScore = 0
-// var csharpScore = 0
-
-
 $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
@@ -41,7 +35,29 @@ $(document).ready(function() {
     } else if (question3 === "python") {
       pythonScore = pythonScore + 1
     }
-    
 
+
+    
+    if (rubyScore > csharpScore && rubyScore > javascriptScore && rubyScore > pythonScore) {
+      $("#preferRuby").show()
+      $("#preferCsharp").hide()
+      $("#preferJavascript").hide()
+      $("#preferPython").hide()
+    } else if (csharpScore > rubyScore && csharpScore > javascriptScore && csharpScore > pythonScore) {
+      $("#preferCsharp").show()
+      $("#preferJavascript").hide()
+      $("#preferPython").hide()
+      $("#preferRuby").hide()
+    } else if (javascriptScore > rubyScore && javascriptScore > csharpScore && javascriptScore > pythonScore) {
+      $("#preferJavascript").show()
+      $("#preferPython").hide()
+      $("#preferRuby").hide()
+      $("#preferCsharp").hide()
+    } else if (pythonScore > rubyScore && pythonScore > csharpScore && pythonScore > javascriptScore) {
+      $("#preferPython").show()
+      $("#preferCsharp").hide()
+      $("#preferJavascript").hide()
+      $("#preferRuby").hide()
+    }
   })
 })
