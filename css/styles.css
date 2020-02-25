@@ -1,10 +1,17 @@
 .jumbotron {
-  background-color: rgba(147, 253, 253, 0.788);
+  background-image: url(https://florapubliclibrary.org/wp-content/uploads/2015/09/Cyan-Blue-Blue-Background-with-White-Light.jpg);
+  margin: 12px;
+  border: 1px solid black;
+  padding: 40px;
+  width: 92%;
 }
 
 .well {
+  align-content: center;
   background-color: azure;
+  border: 1px solid black;
 }
+
 #preferRuby, #preferCsharp, #preferJavascript, #preferPython, #preferPythonAndRuby, #preferPythonAndJavascript {
   display: none;
 }
@@ -22,4 +29,16 @@
 div[id^="prefer"] {
   text-align: center;
   text-emphasis: bold;
+  background-color: white;
+  border-bottom:solid black;
 } 
+
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/598/501/non_2x/light-blue-vector-low-poly-crystal-background-polygon-design-pa.jpg);
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.well p {
+  font-weight: bold;
+}
