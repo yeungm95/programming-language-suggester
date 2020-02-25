@@ -19,10 +19,10 @@ $(document).ready(function() {
 
     // How the score for each language is tallied. Each question has it's own if/else logic. Different questions are weighted differently (silly questions are weighted the lowest). Values are somewhat arbitrary.
     if (question1 === "pythonAndRuby") {
-      pythonScore = pythonScore + 5
-      rubyScore = rubyScore + 5 
+      pythonScore = pythonScore + 4
+      rubyScore = rubyScore + 4
     } else if (question1 === "javascript") {
-      javascriptScore = javascriptScore + 5
+      javascriptScore = javascriptScore + 4
     }
 
     if (question2 === "ruby") {
@@ -108,9 +108,6 @@ $(document).ready(function() {
     } else if (question10 === "javascript") {
       javascriptScore = javascriptScore + 2
     }
-    
-    
-    
     
     // Used to check final score
     console.log(rubyScore, csharpScore, javascriptScore, pythonScore) 
