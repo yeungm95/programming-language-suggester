@@ -10,6 +10,7 @@ $(document).ready(function() {
     var question7 = $("#question7").val();
     var question8 = $("#question8").val();
     var question9 = $("#question9").val();
+    var question10 = $("#question10").val();
 
     var rubyScore = 0
     var csharpScore = 0
@@ -98,6 +99,16 @@ $(document).ready(function() {
       javascriptScore = javascriptScore + 2
     }
     
+    if (question10 === "csharp") {
+      csharpScore = csharpScore + 2
+    } else if (question10 === "ruby") {
+      rubyScore = rubyScore + 2
+    } else if (question10 === "python") {
+      pythonScore = pythonScore + 2
+    } else if (question10 === "javascript") {
+      javascriptScore = javascriptScore + 2
+    }
+    
     
     
     
@@ -110,6 +121,7 @@ $(document).ready(function() {
       $("#preferCsharp").hide()
       $("#preferJavascript").hide()
       $("#preferPython").hide()
+      $("#preferPythonAndJavascript").hide()
       $(".logos :not(#rubylogo)").addClass("dehighlight")
       $(".logos #rubylogo").addClass("highlight")
       $(".logos :not(#rubylogo)").removeClass("highlight")
@@ -118,6 +130,7 @@ $(document).ready(function() {
       $("#preferJavascript").hide()
       $("#preferPython").hide()
       $("#preferRuby").hide()
+      $("#preferPythonAndJavascript").hide()
       $(".logos :not(#csharplogo)").addClass("dehighlight")
       $(".logos #csharplogo").addClass("highlight")
       $(".logos :not(#csharplogo)").removeClass("highlight")
@@ -126,6 +139,7 @@ $(document).ready(function() {
       $("#preferPython").hide()
       $("#preferRuby").hide()
       $("#preferCsharp").hide()
+      $("#preferPythonAndJavascript").hide()
       $(".logos :not(#javascriptlogo)").addClass("dehighlight")
       $(".logos #javascriptlogo").addClass("highlight")
       $(".logos :not(#javascriptlogo)").removeClass("highlight")
@@ -134,9 +148,19 @@ $(document).ready(function() {
       $("#preferCsharp").hide()
       $("#preferJavascript").hide()
       $("#preferRuby").hide()
+      $("#preferPythonAndJavascript").hide()
       $(".logos :not(#pythonlogo)").addClass("dehighlight")
       $(".logos #pythonlogo").addClass("highlight")
       $(".logos :not(#pythonlogo)").removeClass("highlight")
+    } else if (pythonScore === javascriptScore) {
+      $("#preferPythonAndJavascript").show()
+      $("#preferPython").hide()
+      $("#preferCsharp").hide()
+      $("#preferJavascript").hide()
+      $("#preferRuby").hide()
+      $(".logos :not(#pythonlogo, #javascriptlogo)").addClass("dehighlight")
+      $(".logos #javascriptlogo, #pythonlogo").addClass("highlight")
+      $(".logos :not(#pythonlogo, #javascriptlogo)").removeClass("highlight")
     }
   })
 })

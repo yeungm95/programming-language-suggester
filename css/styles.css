@@ -1,4 +1,11 @@
-#preferRuby, #preferCsharp, #preferJavascript, #preferPython {
+.jumbotron {
+  background-color: rgba(147, 253, 253, 0.788);
+}
+
+.well {
+  background-color: azure;
+}
+#preferRuby, #preferCsharp, #preferJavascript, #preferPython, #preferPythonAndRuby, #preferPythonAndJavascript {
   display: none;
 }
 
@@ -9,4 +16,10 @@
 .highlight {
   border: solid black;
   border-width: 5px;
+  opacity: 100%;
 }
+
+div[id^="prefer"] {
+  text-align: center;
+  text-emphasis: bold;
+} 
