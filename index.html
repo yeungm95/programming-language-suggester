@@ -12,6 +12,7 @@
     <div class="jumbotron">
       <h1>What Programming Language Best Suits You?</h1>
       <p>Find out with this survey if you prefer <strong>Ruby, C#, JavaScript, or Python!</strong></p>
+      <p><em>Some questions are not meant to be taken seriously and do not really indicate a language that you would actually prefer to work with.</em></p>
     </div>
     <div class="well">
       <div class=logos>
@@ -21,9 +22,28 @@
         <img src="img/python.jpeg" alt="Python logo">
       </div>
       <form id="form">
-
+        <h3>Answer below to the best of your ability</h3>
+        <p>Do you enjoy front-end or back-end more?
+        <select class="form-control" id="question1" >
+          <option value="javascript">Front-end</option>
+          <option value="pythonAndRuby">Back-end</option>
+        </select>
+        <p>What website do you like best?</p>
+        <select class="form-control" id="question2" >
+          <option value="python">Reddit</option>
+          <option value="ruby">Hulu</option>
+          <option value="ruby">Twitch</option>
+          <option value="python">Pinterest</option>
+        </select>
+        <p>Out of these letters, which is your favorite? P, R, C, J.</p>
+        <select class="form-control" id="question3" >
+          <option value="python">P</option>
+          <option value="ruby">R</option>
+          <option value="csharp">C</option>
+          <option value="javascript">J</option>
+        </select>
         
-
+        
         <button type="submit" class="btn">Find out!</button>
       </form>
     </div>
